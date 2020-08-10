@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://karytogp@bitbucket.org/karytogp/guia-hoteles.git"
+  },
+  "author": "Carol",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/karytogp/guia-hoteles#readme"
+}
