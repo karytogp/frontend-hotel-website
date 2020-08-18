@@ -1,11 +1,16 @@
 .jumbotron{
-	background-color: darkkhaki;
+
 	color: black;
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
+	background-image: url(/imagen/banner.JPG) ;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+		
 	}
 
 .card-hotel{
@@ -28,3 +33,12 @@ footer{
 .footer-address-icon{
 	padding-right: 10px;
 }
+
+.card-img-top {
+	
+    width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+
