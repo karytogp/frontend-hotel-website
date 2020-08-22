@@ -40,27 +40,48 @@
             </ol>
          </nav>
 
-         <div class="d-flex">
+         <div class="row">
 
-               <div class="card col-sm-4">
+            <div class="col-sm-4">
+               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false"
+               aria-controls="multicollapse1">RESERVAS</button>
+            </div>   
+            <div class="col-sm-4">   
+               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comodidad" aria-expanded="false"
+               aria-controls="multicollapse2">COMODIDAD</button>
+            </div>   
+            <div class="col-sm-4">   
+               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#precio" aria-expanded="false"
+               aria-controls="multicollapse3">PRECIO </button>
+            </div>
+         </div>   
+
+         <div class="row">
+
+               <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                  <p>
                      <h4 class="card-title">RESERVAS</h4>
                      <p> Se puede reservar con un mes de anticipacion</p>
+                  </p>   
                </div>
 
-               <div class="card col-sm-4">
+               <div class="col-sm-4 collapse multi-collapse" id="comodidad">
+                  <p>
                      <h4 class="card-title">COMODIDAD</h4>
                      <p> Amplias habitaciones, comodidad y confort</p>
+                  </p>   
                </div>
 
-               <div class="card col-sm-4">
-                     <h4 class="card-title">PRECIO</h4>
+               <div class="col-sm-4 collapse multi-collapse" id="precio">
+                  <p>
+                     <h4 class="card-title">PRECIO </h4>
                      <p>Precios bajos y facilidad de pago</p>
+                  </p>   
                </div> 
          </div> 
           <hr>
 
-          <img src="imagen/playa.jpg" class="img-fluid" style="width: 100%; height:320px;" alt="Responsive Imagen" >
-
+          
          <div class="d-flex flex-wrap">
                <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                   <img src="imagen/hotel1.jpg" class="card-img-top" alt="hotel1" >
@@ -161,6 +182,8 @@
                   </div>   
                </div>
        </div>
+       </div>
+       
 
    <footer>
       <div class="row">
