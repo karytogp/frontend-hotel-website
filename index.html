@@ -86,15 +86,16 @@
                <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                   <img src="imagen/hotel1.jpg" class="card-img-top" alt="hotel1" >
                   <div class="card-body">
-                     <h5 class="card-title">Casa Dann Carlton Hotel & SPA</h5>
+                     <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clase de tango Gratis !!">Casa Dann Carlton Hotel & SPA</h5>
                      <h6 class="card-subtitle text-muted">Bogotá</h6>   
                      <p class="card-text"> La Casa Dann Carlton Hotel & SPA ocupa un edificio impresionante y ofrece 
-                     piscina cubierta, instalaciones de spa, centro de fitness y restaurante. 
+                     piscina cubierta, instalaciones de spa, centro de fitness y restaurante. </p>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+
                   </div>   
-                     </p>
                   <div>
-                        <button class="btn btn-primary btn-reserva">
-                        <span class="oi oi-plus"></span>Ver</button>
+                        <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Promociones vigentes">
+                        <span class="oi oi-plus" ></span>Ver</button>
                   </div>      
                </div>
 
@@ -106,9 +107,10 @@
                      <p class="card-text">Está situado en la avenida El Dorado de Bogotá, cerca de la embajada 
                         de los Estados Unidos y a 6 km del aeropuerto internacional El Dorado. 
                      </p>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
                   </div> 
                   <div>  
-                     <button class="btn btn-primary btn-reserva">Ver</button>
+                     <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Promociones vigentes"> Ver </button>
                   </div>   
                </div>
 
@@ -120,6 +122,7 @@
                      <p class="card-text">se encuentra a 20 minutos en coche del parque Simón Bolívar y del Museo Nacional.
                         El aeropuerto internacional de El Dorado está 15 minutos en coche.
                      </p>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
                   </div>  
                   <div> 
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -134,6 +137,7 @@
                      <p class="card-text">El aeropuerto internacional de El Dorado, el más cercano, 
                         se halla a 1,5 km del Courtyard by Marriott Bogota Airport
                      </p>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
                   </div> 
                   <div>  
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -148,6 +152,7 @@
                      <p class="card-text">El hotel dispone de spa con bañera de hidromasaje, sauna y centro de fitness. 
                         Además, se encuentra a 5 km del coliseo El Campín y del estadio El Campín.
                      </p>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
                   </div> 
                   <div> 
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -162,6 +167,7 @@
                      <p card-text>El aeropuerto internacional de El Dorado, el más cercano, 
                         se halla a 1,5 km del Courtyard by Marriott Bogota Airport
                      </p>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
                   </div>   
                   <div>
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -211,10 +217,8 @@
             </div>
          </div>
       </div>            
-
    </div>
-       
-
+     
    <footer>
       <div class="row">
          <div class="col-sm-4 d-flex flex-column">
@@ -249,5 +253,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+       $(function(){
+          $("[data-toggle='tooltip']").tooltip();
+          $("[data-toggle='popover']").popover();
+
+       });
+      </script>    
   </body>
 </html>
