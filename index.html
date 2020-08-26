@@ -117,7 +117,7 @@
                      <h6 class="card-subtitle text-muted">Bogotá</h6>   
                      <p class="card-text"> La Casa Dann Carlton Hotel & SPA ocupa un edificio impresionante y ofrece 
                      piscina cubierta, instalaciones de spa, centro de fitness y restaurante. </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div>   
                   <div>
                         <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Promociones vigentes">
@@ -133,7 +133,7 @@
                      <p class="card-text">Está situado en la avenida El Dorado de Bogotá, cerca de la embajada 
                         de los Estados Unidos y a 6 km del aeropuerto internacional El Dorado. 
                      </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div> 
                   <div>  
                      <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Promociones vigentes"> Ver </button>
@@ -148,7 +148,7 @@
                      <p class="card-text">se encuentra a 20 minutos en coche del parque Simón Bolívar y del Museo Nacional.
                         El aeropuerto internacional de El Dorado está 15 minutos en coche.
                      </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div>  
                   <div> 
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -163,7 +163,7 @@
                      <p class="card-text">El aeropuerto internacional de El Dorado, el más cercano, 
                         se halla a 1,5 km del Courtyard by Marriott Bogota Airport
                      </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div> 
                   <div>  
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -178,7 +178,7 @@
                      <p class="card-text">El hotel dispone de spa con bañera de hidromasaje, sauna y centro de fitness. 
                         Además, se encuentra a 5 km del coliseo El Campín y del estadio El Campín.
                      </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div> 
                   <div> 
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -193,7 +193,7 @@
                      <p card-text>El aeropuerto internacional de El Dorado, el más cercano, 
                         se halla a 1,5 km del Courtyard by Marriott Bogota Airport
                      </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div>   
                   <div>
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -208,7 +208,7 @@
                      <p class="card-text">El hotel dispone de spa con bañera de hidromasaje, sauna y centro de fitness. 
                         Además, se encuentra a 5 km del coliseo El Campín y del estadio El Campín.
                      </p>
-                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"> Contacto </button>
+                     <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
                   </div>
                   <div>
                      <button class="btn btn-primary btn-reserva">Ver</button>
@@ -277,9 +277,10 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/bootstrap/dist/umd/popper.min.js"></script>
+
+
 
     <script>
        $(function(){
@@ -288,6 +289,28 @@
           $('.carousel').carousel ({
              interval:2000
           });
+          $('#contacto').on('show.bs.modal', function(e){
+             console.log('El modal se esta mostrando');
+
+             $('#contactoBtn').removeClass('btn-outline-success');
+             $('#contactoBtn').addClass('btn-primary');
+
+             $('#contactoBtn').prop('disabled', true);
+          });
+
+          $('#contacto').on('shown.bs.modal', function(e){
+             console.log('El modal se mostró');
+          });
+
+          $('#contacto').on('hide.bs.modal', function(e){
+             console.log('El modal se oculta');
+          });
+
+          $('#contacto').on('hidden.bs.modal', function(e){
+             console.log('El modal se ocultó');
+             $('#contactoBtn').prop('disabled', false);
+          });
+
        });
       </script>    
   </body>
