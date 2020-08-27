@@ -1,0 +1,53 @@
+@color: #5aa36c ;
+
+.margenes ($top: 0ps, $botton:0px) {
+    margin-top: $top;
+    margin-bottom: $botton;
+    
+}
+
+.jumbotron{
+
+	color: black;
+	display: flex;
+	justify-content: center;
+    .margenes(60, 0);
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image: url(/imagen/playa.jpg) ;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+		
+	}
+
+.card-hotel{
+	flex: 1 200px;
+	padding: 2px 0px 2px 0px;
+    .margenes(10, 0);
+}
+
+.btn-reserva{
+	width: 100%;
+}
+
+footer{
+	padding: 10px 10px 0px 10px;
+	background-color: @color;
+    .margenes(10, 0);
+
+}
+
+.footer-address-icon{
+	padding-right: 10px;
+}
+
+.tab-content{
+	padding-top: 10px;
+}
+
+.carousel-inner img {
+    width: 90%;
+    max-height: 300px;
+    margin-bottom: 50px;
+}
