@@ -2,8 +2,7 @@
   color: black;
   display: flex;
   justify-content: center;
-  margin-top: 60;
-  margin-bottom: 0;
+  margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
   background-image: url(/imagen/playa.jpg);
@@ -22,7 +21,7 @@
 
 footer {
   padding: 10px 10px 0px 10px;
-  background-color: #5aa36c;
+  background-color: #ec0f0f;
   margin-top: 10;
   margin-bottom: 0; }
 

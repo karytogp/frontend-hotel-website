@@ -1,9 +1,10 @@
-$color: #5aa36c ;
+
+
+$yellow: #ce6f6f;
 
 @mixin margenes ($top, $botton) {
     margin-top: $top;
-    margin-bottom: $botton;
-    
+	margin-bottom: $botton;
 }
 
 .jumbotron{
@@ -11,7 +12,7 @@ $color: #5aa36c ;
 	color: black;
 	display: flex;
 	justify-content: center;
-    @include margenes(60, 0);
+    margin-top: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
 	background-image: url(/imagen/playa.jpg) ;
@@ -33,7 +34,7 @@ $color: #5aa36c ;
 
 footer{
 	padding: 10px 10px 0px 10px;
-	background-color: $color;
+	background-color: $yellow;
     @include margenes(10, 0);
 
 }

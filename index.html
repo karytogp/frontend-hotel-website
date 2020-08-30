@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!--endbuild-->
 
     <title>Guia Hoteles</title>
   </head>
@@ -111,10 +113,10 @@
           
          <div class="d-flex flex-wrap">
                <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                  <img src="imagen/hotel1.jpg" class="card-img-top" alt="hotel1" >
                   <div class="card-body">
                      <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clase de tango Gratis !!">Casa Dann Carlton Hotel & SPA</h5>
                      <h6 class="card-subtitle text-muted">Bogotá</h6>   
+                     <img src="imagen/hotel1.jpg" class="card-img-top" alt="hotel1" >
                      <p class="card-text"> La Casa Dann Carlton Hotel & SPA ocupa un edificio impresionante y ofrece 
                      piscina cubierta, instalaciones de spa, centro de fitness y restaurante. </p>
                      <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn"> Contacto </button>
@@ -126,10 +128,10 @@
                </div>
 
                <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                  <img src="imagen/hotel2.jpg" class="card-img-top" alt="hotel2" >
                   <div class="card-body">
                      <h5 class="card-title">GHL Hotel Capital</h5>
                      <h6 class="card-subtitle text-muted">Bogotá</h6> 
+                     <img src="imagen/hotel2.jpg" class="card-img-top" alt="hotel2" >
                      <p class="card-text">Está situado en la avenida El Dorado de Bogotá, cerca de la embajada 
                         de los Estados Unidos y a 6 km del aeropuerto internacional El Dorado. 
                      </p>
@@ -272,16 +274,13 @@
 
       </div>
    </footer>    
-
-    
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-
     <script>
        $(function(){
           $("[data-toggle='tooltip']").tooltip();
@@ -310,8 +309,8 @@
              console.log('El modal se ocultó');
              $('#contactoBtn').prop('disabled', false);
           });
-
        });
       </script>    
+      <!--endbuild-->
   </body>
 </html>
